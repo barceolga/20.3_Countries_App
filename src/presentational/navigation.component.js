@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap-theme.css';
 
  const Navigation = propss => (
    <div>
         <nav className="navbar navbar-default">
             <div className="container-fluid">
-                <div className="nvabar-haeder">
+                <div className="navbar-header">
                     <Link className="navbar-brand" to"/">Countries.js</Link>
                 </div>
                 <div className="collapse navbar-collapse">
