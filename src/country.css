@@ -1,5 +1,9 @@
+body {
+  background: #79d279;
+}
+
 #root {
-    background: #eee;
+    background: #79d279;
     height: 100vh;
 }
 
