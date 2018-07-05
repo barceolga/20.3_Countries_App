@@ -28,6 +28,10 @@ const CountryDetails = (props) => (
                       <span>{props.country.currency}</span>
                       <span>Currency</span>
                   </div>
+                  <div>
+                      <span>{props.country.languages}</span>
+                      <span>Languages</span>
+                  </div>
               </div>
           </div>
       </div>
