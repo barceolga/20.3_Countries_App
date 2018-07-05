@@ -19,7 +19,7 @@ export function deleteCountry(id) {
 
 export function getCountry(id) {
   return {
-    type: GET_COUNTRIES,
+    type: GET_COUNTRY,
     id
   }
 }
@@ -31,7 +31,7 @@ export function searchCountries(searchText) {
   }
 }
 
-export function setContintent(name) {
+export function setContinent(name) {
   return {
     type: SET_CONTINTENT,
     name
