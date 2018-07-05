@@ -43,11 +43,11 @@ header {
 }
 
 h1 {
-    font-size: 28px;
-    letter-spacing: 1.2px;
+    font-size: 35px;
+    letter-spacing: 1.5px;
     text-align: center;
     font-weight: 600;
-    color: #323232
+    color: #33001a;
 }
 
 .country-info div span:nth-of-type(1) {
@@ -117,6 +117,8 @@ h1 {
     width: 26%;
     height: 300px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
 .country-logo-wrapper {
@@ -127,4 +129,20 @@ h1 {
 .country-logo {
     max-width: 100%;
     max-height: 100%;
+}
+
+.delete-button {
+    color: #990000;
+    background-color: #ff9933;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 10px;
+    height: 50px;
+}
+.search-bar {
+  display: flex;
+  flex-direction: row;
 }
