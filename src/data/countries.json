@@ -4,14 +4,16 @@
   "populace": "38.53",
   "capital": "Warsaw",
   "continent": "Europe",
+  "languages": "Polish",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1280px-Flag_of_Poland.svg.png",
   "id": 1
 }, {
-  "name": "Irland",
+  "name": "Ireland",
   "currency" : "EUR",
   "populace": "4.59",
   "capital": "Dublin",
   "continent": "Europe",
+  "languages": "English, Irish, Ulter Scots",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/1200px-Flag_of_Ireland.svg.png",
   "id": 2
 }, {
@@ -20,6 +22,7 @@
   "populace": "16.8",
   "capital": "Amsterdam",
   "continent": "Europe",
+  "languages": "Dutch",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/900px-Flag_of_the_Netherlands.svg.png",
   "id": 3
 }, {
@@ -28,6 +31,7 @@
   "populace": "46.7",
   "capital": "Madrid",
   "continent": "Europe",
+  "languages": "Spanish, Catalan, Basq, Euskera, Galician, Occitan",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Bandera_de_Espa%C3%B1a_%28nuevo_dise%C3%B1o%29.svg",
   "id": 4
 }, {
@@ -36,6 +40,7 @@
   "populace": "33.01",
   "capital": "Rabat",
   "continent": "Africa",
+  "languages": "Arabic, Berber",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/900px-Flag_of_Morocco.svg.png",
   "id": 5
 }, {
@@ -44,6 +49,7 @@
   "populace": "10.89",
   "capital": "Tunis",
   "continent": "Africa",
+  "languages": "Arabic",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/1200px-Flag_of_Tunisia.svg.png",
   "id": 6
 }, {
@@ -52,6 +58,7 @@
   "populace": "39.21",
   "capital": "Algiers",
   "continent": "Africa",
+    "languages": "Arabic, Berber, French",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/900px-Flag_of_Algeria.svg.png",
   "id": 7
 }]
