@@ -8,7 +8,7 @@ const CountryDetails = (props) => (
           </header>
           <div className="country-info">
               <h1>{props.country.name}</h1>
-              <h2>Contintent: {props.country.continent}</h2>
+              <h2><span>{props.country.continent}</span><br/>Contintent </h2>
               <div className="info">
 
                   <div>
