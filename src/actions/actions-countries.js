@@ -31,7 +31,7 @@ export function searchCountries(searchText) {
   }
 }
 
-export function setContintent(name) {
+export function setContinent(name) {
   return {
     type: SET_CONTINTENT,
     name
