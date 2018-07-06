@@ -1,9 +1,9 @@
 body {
-  background: #b3e6b3;
+  background: #bfbfbf;
 }
 
 #root {
-    background: #b3e6b3;
+    background: #bfbfbf;
     height: 100vh;
 }
 
@@ -47,7 +47,10 @@ h1 {
     letter-spacing: 1.5px;
     text-align: center;
     font-weight: 600;
-    color: #33001a;
+    color: #262626;
+}
+h2 {
+    color: #262626;
 }
 
 .country-info div span:nth-of-type(1) {
@@ -124,36 +127,51 @@ h1 {
 .country-logo-wrapper {
     height: 100%;
     width: 100%;
+    margin-right: 10px;
 }
 
 .country-logo {
     max-width: 100%;
     max-height: 100%;
+    margin-right: 10px;
 }
 
 .delete-button {
     color: #990000;
-    background-color: #ff9933;
+    background-color: #ffbf80;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .5px;
     padding: 10px;
     height: 50px;
+    border-radius: 5px;
+}
+.remove-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
 }
 .select-button {
-    background-color: #8cb3d9;
-    color: #990000;
+    background-color: #f2f2f2;
+    color: #262626;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: .5px;
-    padding: 10px;
+    padding: 5px;
     height: 50px;
+    margin-left: 10px;
 }
 .search-bar {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar input {
+  margin-left: 10px;
 }
