@@ -59,7 +59,7 @@ class CountryFlagContainer extends Component {
         return (
               <div>
                     <div className="search-bar">
-                    <h1> Search by: </h1>
+                    <h2> Search by: </h2>
                     <select className="select-button" value={this.state.value} onChange={this.searchType.bind(this)}>
                         <option value="name">Name</option>
                         <option value="capital">Capital</option>
@@ -72,8 +72,8 @@ class CountryFlagContainer extends Component {
                         </div>
 
                     </div>
-                  <div>
-                        <button className="delete-button" onClick={this.deleteCountries.bind(this)}>REMOVE ALL</button>
+                  <div className="remove-bar">
+                        <button className="delete-button" onClick={this.deleteCountries.bind(this)}>Remove all</button>
                   </div>
                   <CountryFlagList countries={this.props.visibleCountries} deleteCountry={this.deleteCountry.bind(this)} />
               </div>
