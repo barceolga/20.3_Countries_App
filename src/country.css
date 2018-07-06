@@ -142,6 +142,17 @@ h1 {
     padding: 10px;
     height: 50px;
 }
+.select-button {
+    background-color: #8cb3d9;
+    color: #990000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 10px;
+    height: 50px;
+}
 .search-bar {
   display: flex;
   flex-direction: row;
