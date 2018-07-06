@@ -72,8 +72,8 @@ class CountryFlagContainer extends Component {
                         </div>
 
                     </div>
-                  <div>
-                        <button className="delete-button" onClick={this.deleteCountries.bind(this)}>REMOVE ALL</button>
+                  <div className="remove-bar">
+                        <button className="delete-button" onClick={this.deleteCountries.bind(this)}>Remove all</button>
                   </div>
                   <CountryFlagList countries={this.props.visibleCountries} deleteCountry={this.deleteCountry.bind(this)} />
               </div>

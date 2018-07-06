@@ -4,7 +4,7 @@ import { setContinent, deleteCountry } from '../actions/actions-countries.js';
 import CountryFlagList from '../presentational/flag-list.component.js';
 
 class ContinentsContainer extends Component {
-  
+
     chooseContinent(event){
           this.props.dispatch(setContinent(event.target.value));
     }
@@ -20,7 +20,7 @@ class ContinentsContainer extends Component {
     render() {
           return(
             <div>
-                <select onChange={event => this.chooseContinent(event)}>
+                <select className="select-button" onChange={event => this.chooseContinent(event)}>
                     <option value="Europe">Europe</option>
                     <option value="Africa">Africa</option>
                 </select>
