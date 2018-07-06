@@ -5,6 +5,13 @@ import { getCountries, searchCountries, deleteCountry, deleteCountries, searchCa
 import '../country.css';
 
 class CountryFlagContainer extends Component {
+      constructor(props) {
+        super();
+        this.state = {
+          value: 'name'
+        }
+
+      }
 
       componentDidMount() {
             this.props.dispatch(getCountries());
@@ -14,17 +21,24 @@ class CountryFlagContainer extends Component {
             this.props.dispatch(searchLanguage(''));
       }
 
-      searchName(event) {
-            this.props.dispatch(searchCountries(event.target.value));
-      }
-      searchCapital(event) {
-            this.props.dispatch(searchCapital(event.target.value));
-      }
-      searchCurrency(event) {
-            this.props.dispatch(searchCurrency(event.target.value));
-      }
-      searchLanguage(event) {
-            this.props.dispatch(searchLanguage(event.target.value));
+      searchBy(event) {
+            let action;
+            switch(this.state.value) {
+              case 'name':
+                  action= searchCountries;
+              break;
+              case 'capital':
+                  action= searchCapital;
+              break;
+              case 'currency':
+                  action= searchCurrency;
+              break;
+              case 'language':
+                  action= searchLanguage;
+              break;
+            }
+
+            this.props.dispatch(action(event.target.value));
       }
 
       deleteCountry(id){
@@ -34,27 +48,29 @@ class CountryFlagContainer extends Component {
       deleteCountries(){
             this.props.dispatch(deleteCountries());
       }
+      searchType(event){
+            event.preventDefault();
+            console.log(event.target.value);
+            this.setState({
+              value: event.target.value
+            })
+      }
       render() {
         return (
               <div>
                     <div className="search-bar">
                     <h1> Search by: </h1>
+                    <select className="select-button" value={this.state.value} onChange={this.searchType.bind(this)}>
+                        <option value="name">Name</option>
+                        <option value="capital">Capital</option>
+                        <option value="currency">Currency</option>
+                        <option value="language">Language</option>
+                    </select>
                         <div className="search text-center">
-                              <h3>Name</h3>
-                              <input type="text" onChange={this.searchName.bind(this)} />
+
+                              <input type="text" onChange={this.searchBy.bind(this)} />
                         </div>
-                        <div className="search text-center">
-                              <h3>Capital</h3>
-                              <input type="text" onChange={this.searchCapital.bind(this)} />
-                        </div>
-                        <div className="search text-center">
-                              <h3>Currency</h3>
-                              <input type="text" onChange={this.searchCurrency.bind(this)} />
-                        </div>
-                        <div className="search text-center">
-                              <h3>Language</h3>
-                              <input type="text" onChange={this.searchLanguage.bind(this)} />
-                        </div>
+
                     </div>
                   <div>
                         <button className="delete-button" onClick={this.deleteCountries.bind(this)}>REMOVE ALL</button>
